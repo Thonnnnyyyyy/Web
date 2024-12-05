@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <title>Portfólio - ThonyFilms</title>
+</head>
+<body>
+    <!-- Topo -->
+    <header>
+        <img src="img/THONYFILMS.png" alt="ThonyFilms Logo" class="logo">
+        <p>Transformando ideias em produções visuais</p>
+    </header>
+
+    <!-- Quem somos -->
+    <section id="quem-somos">
+        <div class="lado-esquerdo">
+            <img src="img/cam.jpg" alt="Descrição da Imagem">
+        </div>
+        <div class="lado-direito">
+            <h2>Quem Somos?</h2>
+            <p>Somos uma produtora audiovisual no mercado desde 2021, dedicada a contar histórias únicas e impactantes. 
+                Com uma trajetória marcada por criatividade e excelência. Já realizamos produções tanto no cenário nacional 
+                quanto internacional, sempre buscando transformar ideias em experiências visuais memoráveis.</p>
+        </div>
+    </section>
+
+    <!-- Resumo -->
+    <section id="portfolio">
+        <h2>Resumo</h2>
+        <div class="galeria">
+            <video class="resumo-video" src="img/video1.mp4" muted loop></video>
+            <video class="resumo-video" src="img/video2.mp4" muted loop></video>
+            <video class="resumo-video" src="img/video3.mp4" muted loop></video>
+        </div>
+    </section>    
+
+    <!-- Serviços -->
+    <section id="servicos">
+        <h2>O que oferecemos</h2>
+        <div class="caixinhas">
+            <button onclick="mostrarSecao('wedding')" class="caixa">Wedding</button>
+            <button onclick="mostrarSecao('videoclips')" class="caixa">Videoclips</button>
+            <button onclick="mostrarSecao('aftermovies')" class="caixa">Aftermovies</button>
+            <button onclick="mostrarSecao('fashionfilms')" class="caixa">Fashionfilms</button>
+            <button onclick="mostrarSecao('socialads')" class="caixa">Social Ads</button>
+        </div>
+    </section>
+
+    <!-- Wedding -->
+    <section id="wedding" class="hidden">
+        <h2>Wedding</h2>
+        <div class="galeria">
+            <img src="img/wedding1.jpg" alt="Wedding 1">
+            <img src="img/wedding2.jpg" alt="Wedding 2">
+        </div>
+        <button class="voltar" onclick="voltarResumo()">Voltar</button>
+    </section>
+
+    <!-- Videoclips -->
+    <section id="videoclips" class="hidden">
+        <h2>Videoclips</h2>
+        <div class="galeria">
+            <img src="img/videoclips1.jpg" alt="Videoclips 1">
+            <img src="img/videoclips2.jpg" alt="Videoclips 2">
+        </div>
+        <button class="voltar" onclick="voltarResumo()">Voltar</button>
+    </section>
+
+    <!-- Aftermovies -->
+    <section id="aftermovies" class="hidden">
+        <h2>Aftermovies</h2>
+        <div class="galeria">
+            <img src="img/aftermovies1.jpg" alt="Aftermovies 1">
+            <img src="img/aftermovies2.jpg" alt="Aftermovies 2">
+        </div>
+        <button class="voltar" onclick="voltarResumo()">Voltar</button>
+    </section>
+
+    <!-- Fashionfilms -->
+    <section id="fashionfilms" class="hidden">
+        <h2>Fashionfilms</h2>
+        <div class="galeria">
+            <img src="img/fashionfilms1.jpg" alt="Fashionfilms 1">
+            <img src="img/fashionfilms2.jpg" alt="Fashionfilms 2">
+        </div>
+        <button class="voltar" onclick="voltarResumo()">Voltar</button>
+    </section>
+
+    <!-- Social Ads -->
+    <section id="socialads" class="hidden">
+        <h2>Social Ads</h2>
+        <div class="galeria">
+            <img src="img/socialads1.jpg" alt="Social Ads 1">
+            <img src="img/socialads2.jpg" alt="Social Ads 2">
+        </div>
+        <button class="voltar" onclick="voltarResumo()">Voltar</button>
+    </section>
+
+<!-- Contato -->
+<section id="contato">
+    <div class="contato-esquerdo">
+        <h2>Contato</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Seu email">
+            
+            <label for="detalhes">Mais Detalhes</label>
+            <textarea id="detalhes" name="detalhes" placeholder="Descreva seu projeto (opcional)"></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+    <div class="contato-direito">
+        <h2>Solicite Orçamento</h2>
+        <p><strong>Email:</strong> <a href="mailto:thonyfilms@gmail.com" target="_blank">thonyfilms04@gmail.com</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/123456789" target="_blank">(82) 99302-9797</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/seu_instagram" target="_blank">@thonyfilms</a></p>
+    </div>
+</section>
+
+
+    <!-- JavaScript -->
+    <script src="web.js"></script>
+</body>
+</html>

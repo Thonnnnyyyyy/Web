@@ -1,0 +1,249 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background-color: #1c1c1c;
+    padding: 40px 10px;
+}
+
+header .logo {
+    max-width: 320px;
+    height: auto;
+    margin-top: 30px;
+}
+
+/* Quem somos? */
+
+#quem-somos {
+    display: flex;
+    height: 500px; /* Altura da seção */
+    background-color: #ffffff; /* Cor de fundo para garantir contraste */
+}
+
+.lado-esquerdo {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lado-esquerdo img {
+    max-width: 74%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.lado-direito {
+    flex: 1;
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.lado-direito h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.lado-direito p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Resumo */
+#portfolio, section {
+    padding: 30px 20px;
+}
+
+#portfolio h2, section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Estilo dos vídeos na seção Resumo */
+.resumo-video {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Serviços */
+#servicos {
+    padding: 30px 20px;
+}
+
+#servicos h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.caixinhas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.caixa {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    border: 1px solid white;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.caixa:hover {
+    background-color: #ffffff;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Efeito de zoom ao passar o mouse */
+.resumo-video:hover {
+    transform: scale(1.05);
+}
+
+/* Contato */
+#contato {
+    display: flex;
+    height: 70vh;
+}
+
+.contato-esquerdo, .contato-direito {
+    width: 50%; /* Divisão 50-50 da tela */
+    padding: 20px;
+}
+
+.contato-esquerdo {
+    background-color: #1c1c1c; /* Fundo cinza para o lado esquerdo */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-esquerdo h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.contato-esquerdo form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.contato-esquerdo label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contato-esquerdo input, .contato-esquerdo textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+.contato-esquerdo button {
+    width: 105%; /* largura do botão */
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato-esquerdo button:hover {
+    background-color: #444;
+}
+
+.contato-direito {
+    background-color: white; /* Fundo branco para o lado direito */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-direito h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.contato-direito p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.contato-direito a {
+    text-decoration: none;
+    color: #1a73e8; /* Cor de link */
+}
+
+.contato-direito a:hover {
+    text-decoration: underline;
+}
+
+/* Botão de voltar */
+.voltar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.voltar:hover {
+    background-color: #5e5e5e;
+    color: white;
+}
+
+/* Ocultar seções */
+.hidden {
+    display: none;
+}
